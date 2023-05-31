@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+    <Button
+            android:id="@+id/generateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Generate Numbers"
+            android:layout_centerInParent="true"
+            android:onClick="generateNumbers" />
+
+    <TextView
+            android:id="@+id/numbersTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/generateButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Generated Numbers"
+            android:textSize="18sp" />
+
+    <Button
+            android:id="@+id/sortAscendingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort Ascending"
+            android:layout_below="@id/numbersTextView"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:onClick="sortAscending" />
+
+    <Button
+            android:id="@+id/sortDescendingButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sort Descending"
+            android:layout_below="@id/numbersTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:onClick="sortDescending" />
+
+</RelativeLayout>
